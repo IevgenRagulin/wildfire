@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "jQuery": "^1.7.4",
     "react": "^16.4.1",
     "react-addons-create-fragment": "^15.6.2",
     "react-bootstrap": "^0.32.1",
