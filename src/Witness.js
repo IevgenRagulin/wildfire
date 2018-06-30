@@ -17,25 +17,22 @@ class Witness extends React.Component {
     event.preventDefault();
     const data = new FormData(event.target);
     console.log("_____");
-    fetch('https://desolate-anchorage-86223.herokuapp.com/subscribers', {
+    fetch('https://desolate-anchorage-86223.herokuapp.com/witness/', {
       method: 'POST',
-      body: data,
+      body:
+      {
+          "location": "2 MetroTech Center, Brooklyn, NY 11201", 
+          "description": "An I.C.E. agent has been spotted"
+      },
     });
-  }
-
-  getValidationState() {
-    const length = this.state.value.length;
-    if (length < 10 && length > 0) return 'warning';
-    return null;
   }
 
   render() {
     return (
       <Form onSubmit={this.handleSubmit} className="form-signin widths">
-        <h1>Sign Up</h1>
+        <h1>Witness</h1>
         <FormGroup
           controlId="formBasicText"
-          validationState={this.getValidationState()}
           bsSize="large"
         >
           <ControlLabel></ControlLabel>
