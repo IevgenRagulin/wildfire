@@ -1,5 +1,5 @@
 import React from 'react'
-import { FormGroup, InputGroup, FormControl, Button, HelpBlock, ControlLabel, Form, Col } from 'react-bootstrap';
+import { FormGroup, FormControl, ControlLabel, Form, Col } from 'react-bootstrap';
 import './SignUp.css';
 
 class SignUP extends React.Component {
@@ -56,7 +56,7 @@ class SignUP extends React.Component {
         </FormGroup>
         <FormGroup>
           <Col >
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Create Account</button>
+            <button className="btn btn-lg btn-primary btn-block" type="submit">Create Account</button>
           </Col>
         </FormGroup>
       </Form>
