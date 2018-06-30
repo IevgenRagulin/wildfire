@@ -8,7 +8,7 @@ class Header extends Component {
         <Navbar.Header>
             <Navbar.Brand>
             <a href="">WildFire</a>
-            </Navbar.Brand>
+             </Navbar.Brand>
             <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
