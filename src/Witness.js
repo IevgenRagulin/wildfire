@@ -42,7 +42,7 @@ class Witness extends React.Component {
   render() {
     return (
       <Form onSubmit={this.handleSubmit} className="form-signin widths">
-        <h1>Witness Form</h1>
+        <h1>What happened</h1>
         <FormGroup controlId="formControlsTextarea">
           <ControlLabel></ControlLabel>
           <FormControl 
@@ -55,7 +55,7 @@ class Witness extends React.Component {
           controlId="formBasicText"
           bsSize="sm"
         >
-          <ControlLabel>Location of the event</ControlLabel>
+          {/* <ControlLabel>Location of the event</ControlLabel> */}
           <FormControl
             type="text"
             value={this.state.value}

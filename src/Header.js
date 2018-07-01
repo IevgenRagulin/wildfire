@@ -31,7 +31,7 @@ class Header extends Component {
         <Navbar collapseOnSelect>
         <Navbar.Header>
             <Navbar.Brand>
-            <a href="/">WildFire</a>
+            <a href="/">Whistle</a>
              </Navbar.Brand>
             <Navbar.Toggle />
         </Navbar.Header>
