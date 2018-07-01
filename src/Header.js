@@ -31,7 +31,7 @@ class Header extends Component {
         <Navbar collapseOnSelect>
         <Navbar.Header>
             <Navbar.Brand>
-            <a href="/">Whistle</a>
+            <a href="/wildfire">Whistle</a>
              </Navbar.Brand>
             <Navbar.Toggle />
         </Navbar.Header>
@@ -40,15 +40,15 @@ class Header extends Component {
             <NavItem eventKey={1} href="https://desolate-anchorage-86223.herokuapp.com/map">
                 Map
             </NavItem>
-            <NavItem eventKey={2} href="/witness-form">
+            <NavItem eventKey={2} href="/wildfire/witness-form">
                 Witness Form
             </NavItem>
             </Nav>
             <Nav pullRight>
             <NavDropdown eventKey={3} title="" id="basic-nav-dropdown">
-                <MenuItem eventKey={3.1} href="/subscribe">Log In</MenuItem>
+                <MenuItem eventKey={3.1} href="/wildfire/subscribe">Log In</MenuItem>
                 <MenuItem divider />
-                <MenuItem eventKey={3.2} href="/signup">Sign Up</MenuItem>
+                <MenuItem eventKey={3.2} href="/wildfire/signup">Sign Up</MenuItem>
             </NavDropdown>
             </Nav>
         </Navbar.Collapse>
