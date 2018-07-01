@@ -1,5 +1,5 @@
 import React from 'react'
-import { FormGroup, FormControl, ControlLabel, Form, Col } from 'react-bootstrap';
+import { FormGroup, FormControl, ControlLabel, Form, Col, Tooltip } from 'react-bootstrap';
 import './Witness.css';
 
 class Witness extends React.Component {
