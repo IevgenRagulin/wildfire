@@ -1,8 +1,8 @@
 import React from 'react'
 import { FormGroup, FormControl, ControlLabel, Form, Col } from 'react-bootstrap';
-import './SignUp.css';
+import './Witness.css';
 
-class SignUP extends React.Component {
+class Subscribe extends React.Component {
   constructor(props, context) {
     super(props, context);
 
@@ -17,7 +17,7 @@ class SignUP extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     const data = new FormData(event.target);
-    console.log("Not connected to DB yet");
+    console.log("_____");
     // fetch('https://desolate-anchorage-86223.herokuapp.com/witness/', {
     //   method: 'POST',
     //   headers: {
@@ -25,18 +25,10 @@ class SignUP extends React.Component {
     //     'Content-Type': 'application/json',
     //   },
     //   body: JSON.stringify({
-    //     location: "2 MetroTech Center, Brooklyn, NY 11201", 
-    //     description: "An I.C.E. agent has been spotted"
+    //     location: this.locationInput.value, 
+    //     description: this.textInput.value
     // })
     // });
-  }
-
-  getValidationState() {
-    const length = this.state.value.length;
-    if (length > 9 && length < 12) return 'success';
-    else if (length > 1) return 'warning';
-    else if (length > 0) return 'Phone number must include at least 10 digits';
-    return null;
   }
 
   handleChange(e) {
@@ -46,29 +38,29 @@ class SignUP extends React.Component {
   render() {
     return (
       <Form onSubmit={this.handleSubmit} className="form-signin widths">
-        <h1>Sign Up</h1>
-        <FormGroup
-          controlId="formBasicText"
-          validationState={this.getValidationState()}
-          bsSize="large"
-        >
-          <ControlLabel></ControlLabel>
-          <FormControl
-            type="text"
-            value={this.state.value}
-            placeholder="Please enter your phone number"
-            onChange={this.handleChange}
+        <h1>Subscribe</h1>
+        <FormGroup controlId="formControlsTextarea">
+          <ControlLabel>Recieve alerts from around the area</ControlLabel>
+          <FormControl 
+            componentClass="textarea" 
+            placeholder="###-###-###"
+            inputRef={input => this.phoneinput = input}
           />
           <FormControl.Feedback />
         </FormGroup>
         <FormGroup>
           <Col >
-            <button className="btn btn-lg btn-primary btn-block" type="submit">Create Account</button>
+            <button className="btn btn-lg btn-primary btn-block" type="submit">Submit Witness</button>
           </Col>
         </FormGroup>
+        <FormGroup>
+        <ControlLabel>Phone Number</ControlLabel>
+        <MaskedFormControl type='text' name='phoneNumber' mask='111-111-1111' />
+      </FormGroup>
+
       </Form>
     );
   }
 }
 
-export default SignUP;
+export default Subscribe;

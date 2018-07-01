@@ -64,7 +64,7 @@ class Witness extends React.Component {
 
         <FormGroup>
           <Col >
-            <button className="btn btn-lg btn-primary btn-block" type="submit">Submit Witness</button>
+            <button className="btn btn-lg btn-primary btn-block" type="submit">Send alert</button>
           </Col>
         </FormGroup>
       </Form>
