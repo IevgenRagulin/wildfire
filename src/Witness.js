@@ -27,8 +27,12 @@ class Witness extends React.Component {
       body: JSON.stringify({
         location: this.locationInput.value, 
         description: this.textInput.value
+      })
+    }).then(function() {
+      console.log("ok");
+    }).catch(function() {
+      console.log("Erro with posting data");
     })
-    });
   }
 
   handleChange(e) {
