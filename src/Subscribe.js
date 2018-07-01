@@ -59,7 +59,7 @@ class Subscribe extends React.Component {
         </FormGroup>
         <FormGroup>
           <Col >
-            <button className="btn btn-lg btn-primary btn-block" type="submit">Submit Witness</button>
+            <button className="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
           </Col>
         </FormGroup>
       </Form>

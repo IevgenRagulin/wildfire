@@ -46,7 +46,7 @@ class Header extends Component {
             </Nav>
             <Nav pullRight>
             <NavDropdown eventKey={3} title="" id="basic-nav-dropdown">
-                <MenuItem eventKey={3.1} href="/login">Log In</MenuItem>
+                <MenuItem eventKey={3.1} href="/subscribe">Log In</MenuItem>
                 <MenuItem divider />
                 <MenuItem eventKey={3.2} href="/signup">Sign Up</MenuItem>
             </NavDropdown>
