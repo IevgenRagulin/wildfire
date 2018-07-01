@@ -25,8 +25,8 @@ class Witness extends React.Component {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        location: "2 MetroTech Center, Brooklyn, NY 11201", 
-        description: "An I.C.E. agent has been spotted"
+        location: this.locationInput.value, 
+        description: this.textInput.value
     })
     });
   }
@@ -41,7 +41,11 @@ class Witness extends React.Component {
         <h1>Witness Form</h1>
         <FormGroup controlId="formControlsTextarea">
           <ControlLabel></ControlLabel>
-          <FormControl componentClass="textarea" placeholder="Describe the situation" />
+          <FormControl 
+            componentClass="textarea" 
+            placeholder="What happened?"
+            inputRef={input => this.textInput = input}
+          />
         </FormGroup>
         <FormGroup
           controlId="formBasicText"
@@ -51,7 +55,8 @@ class Witness extends React.Component {
           <FormControl
             type="text"
             value={this.state.value}
-            placeholder="Location"
+            placeholder="Where?"
+            inputRef={input => this.locationInput = input}
             onChange={this.handleChange}
           />
           <FormControl.Feedback />
