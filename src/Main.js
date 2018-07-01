@@ -11,9 +11,9 @@ const Main = () => (
     <BrowserRouter>
       <Switch>
         <Route exact path='/' component={Home}/>
-        <Route path='/witness-form' component={Witness}/>
-        <Route path='/signup' component={SignUp}/>
-        <Route path='/subscribe' component={Subscribe}/>
+        <Route path='/wildfire/witness-form' component={Witness}/>
+        <Route path='/wildfire/signup' component={SignUp}/>
+        <Route path='/wildfire/subscribe' component={Subscribe}/>
       </Switch>
     </BrowserRouter>
   </main>
