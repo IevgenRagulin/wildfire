@@ -5,7 +5,7 @@ class Home extends React.Component {
   render() {
     return(
       <div>
-        <h1 className="title">Welcome to the Whistle!</h1>
+        <h1 className="title">Welcome to Whistle!</h1>
         <img alt="App Icon" width="20%" src="Bitmap.png"/>
         {/* <table className="titleBar"> 
           <tbody>
