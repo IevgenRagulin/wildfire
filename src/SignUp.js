@@ -18,17 +18,17 @@ class SignUP extends React.Component {
     event.preventDefault();
     const data = new FormData(event.target);
     console.log("_____");
-    fetch('https://desolate-anchorage-86223.herokuapp.com/witness/', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        location: "2 MetroTech Center, Brooklyn, NY 11201", 
-        description: "An I.C.E. agent has been spotted"
-    })
-    });
+    // fetch('https://desolate-anchorage-86223.herokuapp.com/witness/', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Accept': 'application/json',
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify({
+    //     location: "2 MetroTech Center, Brooklyn, NY 11201", 
+    //     description: "An I.C.E. agent has been spotted"
+    // })
+    // });
   }
 
   getValidationState() {
